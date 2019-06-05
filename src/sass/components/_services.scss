@@ -1,7 +1,7 @@
 .services {
   position: relative;
-  background-color: #333;
-  color: #eee;
+  background-color: $bg-inverse;
+  color: $color-inverse;
   padding: 60px 0 80px 0;
   ul {
     text-align: center;
