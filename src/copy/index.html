@@ -9,6 +9,7 @@
 
   <link rel="apple-touch-icon" href="icon.png">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -20,64 +21,56 @@
   <![endif]-->
 
   <header class="main-header">
-    <img class="main-header-logo" src="img/logo.png" alt="Сервис грузчиков 24 часа">
-    <p class="main-header-contacts"><a href="+79020689290">8(902) 068-92-90</a><br><a href="tel:+79242527677">8(924) 252-76-77</a></p>
-  </header>
-
-  <section class="about container">
-    <h1 class="visually-hidden">Услуги грузчиков 24 часа во Владивостоке и Артеме</h1>
-    <div class="row">
-      <form id="order" class="about-order column column-33" action="#">
-        <fieldset>
-          <legend>Закажи прямо сейчас!</legend>
-          <label>
-            Имя
-            <input type="text" name="name" placeholder="Ваше имя">
-          </label>
-          <label>
-            Телефон
-            <input type="tel" name="phone" placeholder="Ваш телефон">
-          </label>
-          <button type="submit" class="button">Вызвать грузчиков</button>
-        </fieldset>
-      </form>
-      <div class="column">
-        <p>
-          Мы рады приветствовать вас на нашем сайте! Мы поможем вам в предоставлении грузчиков на квартирные и офисные перевозки во Владивостоке.
-        </p>
-        <p>
-          Мы можем помочь вам с квартирным переездом в виде предоставления разнорабочих, в особенности грузчиков. Переезд квартиры может доставить множество проблем. Вы даже представить себе не можете, насколько удобны и комфортны переезды с грузчиками. Абсолютно все, о чем вы попросите, сделают наши грузчики. Они вам во всем помогут, поэтому вы можете не беспокоиться. Наши грузчики во Владивостоке помогут вам поднять и перенести объекты абсолютно любого веса, помогут в подъеме стройматериалов, мебели и бытовой техники. А также вы можете использовать наших грузчиков для работы по разгрузке. Более того, мы помогаем при масштабных переездах, услугами наших грузчиков пользуются крупные компании, чтобы поменять офис.
-        </p>
-        <p>
-          Вы с легкостью можете организовывать переезды с нашими грузчиками, так как все наши грузчики работают по вызову.
-        </p>
-        <p>
-          Услуги наших грузчиков стоят недорого, поэтому если вам предстоят переезды, то воспользуйтесь услугами наших грузчиков во Владивостоке, обращайтесь в нашу компанию. Мы вас будем ждать!
-        </p>
+    <div class="main-header-wrapper container">
+      <h1 class="visually-hidden">Услуги грузчиков 24 часа во Владивостоке и Артеме</h1>
+      <div class="main-header-top">
+        <img class="main-header-logo" src="img/logo.png" alt="Сервис грузчиков 24 часа">
+        <p class="main-header-contacts"><a href="+79020689290">8(902) 068-92-90</a><br><a href="tel:+79242527677">8(924) 252-76-77</a></p>
+      </div>
+      <div class="main-header-middle">
+        <div class="main-header-about">
+          <p>Компания gruz-vl предоставляет услуги грузчиков для квартирных и офисных перевозок по Владивостоку, Артему и пригороду. Наши сотрудники рады помочь решить ваши проблемы с любыми перевозками будь это подъем стройматериалов, мебели или бытовой техники в любое удобное для Вас время. Для постоянных клиентов действует гибкая система скидок.</p>
+          <p>Оформите заявку и мы будем готовы помочь вам уже через минуту.</p>
+          <form id="order" class="about-order" action="#">
+            <fieldset>
+              <legend>Закажи прямо сейчас!</legend>
+              <label for="order-name" class="visually-hidden">Имя</label>
+              <input id="order-name" type="text" name="name" placeholder="Ваше имя">
+              <label for="order-phone" class="visually-hidden">Телефон</label>
+              <input id="order-phone" type="tel" name="phone" placeholder="Ваш телефон">
+              <button type="submit" class="button">Вызвать грузчиков</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="main-header-background">
+        </div>
       </div>
     </div>
-  </section>
+  </header>
 
   <section class="services container">
     <h2>Наши услуги</h2>
-    <ul class="services-items row">
-      <li class="services-item column column-20">
+    <ul class="services-items">
+      <li>
         Погрузка/выгрузка/перегруз грузов из автомобилей, контейнеров, фур, вагонов
       </li>
-      <li class="services-item column column-20">
-        Погрузка/выгрузка/перегруз грузов из автомобилей, контейнеров, фур, вагонов
+      <li>
+        Сборка/разборка мебели, упаковка мебели, организация квартирных и офисных переездов
       </li>
-      <li class="services-item column column-20">
-        Погрузка/выгрузка/перегруз грузов из автомобилей, контейнеров, фур, вагонов
+      <li>
+        Вывоз мусора, хлама, мебели, старой бытовой техники
       </li>
-      <li class="services-item column column-20">
-        Погрузка/выгрузка/перегруз грузов из автомобилей, контейнеров, фур, вагонов
+      <li>
+        Складские работы по перемещению грузов
       </li>
-      <li class="services-item column">
-        Погрузка/выгрузка/перегруз грузов из автомобилей, контейнеров, фур, вагонов
+      <li>
+        Уборка территории, мелкий ремонт, лакокрасочные работы
       </li>
-      <li class="services-item column">
-        Погрузка/выгрузка/перегруз грузов из автомобилей, контейнеров, фур, вагонов
+      <li>
+        Покос травы, земельные работы
+      </li>
+      <li>
+        Прочие тяжёлые/объёмные работы на объектах
       </li>
     </ul>
   </section>
@@ -103,6 +96,48 @@
       </li>
     </ul>
   </section>
+
+  <section class="prices container">
+    <h2>Наши тарифы</h2>
+    <ul class="prices-items row">
+      <li class="column">
+        <p class="prices-item-header">За тонну</p>
+        <p>От 200 до 300 рублей за тонну, зависит от объёма работ</p>
+      </li>
+      <li class="column">
+        <p class="prices-item-header">За час</p>
+        <p>От 200 до 300 рублей за 1 человека в час, зависит от характера и объёма работ</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="additional-services container">
+    <h2>А еще мы:</h2>
+    <ul class="additional-services-items">
+      <li>
+        оказываем услуги по приёму/пересчёту товара согласно акта/накладной
+      </li>
+      <li>
+        предоставляем услуги экспедитора
+      </li>
+      <li>
+        оказываем тальманские услуги
+      </li>
+      <li>
+        организовываем ответственное хранение, а также выдачу любых партий товара в любом температурном режиме
+      </li>
+    </ul>
+  </section>
+
+  <footer class="main-footer">
+    <p class="column">
+      <strong>ИП Яковлев Александр Викторович</strong><br>
+      Юридический (почтовый) адрес: 692751, Приморский край, г. Артем ул. Чернышевского, д. 29А., ИНН 250274217066, ОГРНИП 318253600035487, р/сч 40802810500000509651 в АО «Тинькофф Банк», к/с 30101810145250000974, БИК 044525974, e-mail: vladivostok28km@gmail.com, тел.: 8(924)252-76-77, 8(914)692-93-47
+    </p>
+    <p class="column column-25">
+      © gruz-vl.ru
+    </p>
+  </footer>
 
   <script src="js/main.js"></script>
 

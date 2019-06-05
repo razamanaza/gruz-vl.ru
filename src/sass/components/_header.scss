@@ -1,0 +1,50 @@
+.main-header-wrapper {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.main-header-middle {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-header-about {
+  margin-right: 50px;
+  align-self: center;
+  max-width: 450px;
+}
+
+.main-header-background {
+  background-image: url('../img/main-header-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  flex-grow: 1;
+  min-width: 300px;
+  min-height: 350px;
+}
+
+.main-header-contacts {
+  font-size: 2.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.about-order {
+  min-width: 215px;
+  text-align: center;
+  align-self: center;
+}
