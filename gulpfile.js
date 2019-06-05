@@ -32,7 +32,7 @@ var paths = {
  */
 
 var settings = {
-  ghPagesUrl: '' //Should look like https://github.com/dezforce/dezforce.github.io.git
+  ghPagesUrl: 'https://github.com/razamanaza/gruz-vl.ru.git' //Should look like https://github.com/dezforce/dezforce.github.io.git
 }
 
 /**
@@ -197,7 +197,7 @@ var deploy = function (done) {
   return src(paths.deploy.src)
   .pipe(ghPages({
     remoteUrl: settings.ghPagesUrl,
-    branch: 'master'
+    branch: 'gh-pages'
   }));
 };
 

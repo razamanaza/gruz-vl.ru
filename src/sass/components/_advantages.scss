@@ -1,0 +1,32 @@
+.advantages-item-header {
+  font-family: 'Comfortaa', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: $color-primary;
+  font-weight: bold;
+}
+
+.advantages-item {
+  .advantages-item-header:before {
+    content: "";
+    display:block;
+    height:125px;
+    width:125px;
+    background-size: 125px 125px;
+    background-repeat: no-repeat;
+    margin: 0 auto 30px auto;
+
+  }
+  .quality::before {
+    background-image: url('../img/quality.svg');
+  }
+  .speed::before {
+    background-image: url('../img/speed.svg');
+  }
+  .convenience::before {
+    background-image: url('../img/convenience.svg');
+  }
+  .profit::before {
+    background-image: url('../img/profit.svg');
+  }
+}
