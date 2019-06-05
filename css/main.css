@@ -757,7 +757,7 @@ h6 {
 }
 
 /* line 25, src/sass/components/_base.scss */
-body {
+body, html {
   margin: 0;
   padding: 0;
 }
@@ -890,6 +890,90 @@ section h2 {
 /* line 20, src/sass/components/_services.scss */
 .services-bottom {
   bottom: -1px;
+}
+
+/* line 1, src/sass/components/_advantages.scss */
+.advantages-item-header {
+  font-family: 'Comfortaa', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #333366;
+  font-weight: bold;
+}
+
+/* line 10, src/sass/components/_advantages.scss */
+.advantages-item .advantages-item-header:before {
+  content: "";
+  display: block;
+  height: 125px;
+  width: 125px;
+  background-size: 125px 125px;
+  background-repeat: no-repeat;
+  margin: 0 auto 30px auto;
+}
+
+/* line 20, src/sass/components/_advantages.scss */
+.advantages-item .quality::before {
+  background-image: url("../img/quality.svg");
+}
+
+/* line 23, src/sass/components/_advantages.scss */
+.advantages-item .speed::before {
+  background-image: url("../img/speed.svg");
+}
+
+/* line 26, src/sass/components/_advantages.scss */
+.advantages-item .convenience::before {
+  background-image: url("../img/convenience.svg");
+}
+
+/* line 29, src/sass/components/_advantages.scss */
+.advantages-item .profit::before {
+  background-image: url("../img/profit.svg");
+}
+
+/* line 1, src/sass/components/_prices.scss */
+.prices-item-header {
+  font-family: 'Comfortaa', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #333366;
+  font-weight: bold;
+}
+
+/* line 10, src/sass/components/_prices.scss */
+.prices .prices-item-header:before {
+  content: "";
+  display: block;
+  height: 125px;
+  width: 125px;
+  background-size: 125px 125px;
+  background-repeat: no-repeat;
+  margin: 0 auto 30px auto;
+}
+
+/* line 19, src/sass/components/_prices.scss */
+.prices .weight::before {
+  background-image: url("../img/scale.svg");
+}
+
+/* line 22, src/sass/components/_prices.scss */
+.prices .hour::before {
+  background-image: url("../img/clock.svg");
+}
+
+/* line 2, src/sass/components/_additional-services.scss */
+.additional-services ul {
+  text-align: center;
+}
+
+/* line 1, src/sass/components/_footer.scss */
+.main-footer {
+  margin-top: 80px;
+  margin-bottom: 0;
+  background-color: #333;
+  color: #eee;
+  padding: 20px;
 }
 
 @media screen and (max-width: 1024px) {
