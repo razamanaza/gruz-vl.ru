@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap&subset=cyrillic");
 /* line 6, src/sass/vendors/milligram/_Base.sass */
 *,
 *:after,
@@ -740,7 +741,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Comfortaa', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* line 14, src/sass/components/_base.scss */
@@ -862,6 +863,11 @@ section h2 {
       align-self: center;
 }
 
+/* line 50, src/sass/components/_header.scss */
+.about-order legend {
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 /* line 1, src/sass/components/_services.scss */
 .services {
   position: relative;
@@ -894,7 +900,7 @@ section h2 {
 
 /* line 1, src/sass/components/_advantages.scss */
 .advantages-item-header {
-  font-family: 'Comfortaa', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 2rem;
   text-align: center;
   color: #333366;
@@ -934,7 +940,7 @@ section h2 {
 
 /* line 1, src/sass/components/_prices.scss */
 .prices-item-header {
-  font-family: 'Comfortaa', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Montserrat", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   font-size: 2rem;
   text-align: center;
   color: #333366;
@@ -967,13 +973,145 @@ section h2 {
   text-align: center;
 }
 
-/* line 1, src/sass/components/_footer.scss */
+/* line 14, src/sass/components/_footer.scss */
 .main-footer {
   margin-top: 80px;
   margin-bottom: 0;
   background-color: #333;
   color: #eee;
   padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/* line 22, src/sass/components/_footer.scss */
+.main-footer p {
+  margin-bottom: 0;
+}
+
+/* line 27, src/sass/components/_footer.scss */
+.main-footer-contacts {
+  margin-left: 20px;
+  display: inline-block;
+  line-height: 3rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+/* line 32, src/sass/components/_footer.scss */
+.main-footer-contacts a, .main-footer-contacts p {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+/* line 36, src/sass/components/_footer.scss */
+.main-footer-contacts .address {
+  position: relative;
+}
+
+/* line 38, src/sass/components/_footer.scss */
+.main-footer-contacts .address::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background-image: url("../img/address.svg");
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  left: -25px;
+  bottom: 0.3rem;
+}
+
+/* line 42, src/sass/components/_footer.scss */
+.main-footer-contacts .email {
+  position: relative;
+  color: #eee;
+}
+
+/* line 45, src/sass/components/_footer.scss */
+.main-footer-contacts .email:hover {
+  color: #d1d1d1;
+}
+
+/* line 48, src/sass/components/_footer.scss */
+.main-footer-contacts .email::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background-image: url("../img/email.svg");
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  left: -25px;
+  bottom: 0.3rem;
+  bottom: 0.5rem;
+}
+
+/* line 53, src/sass/components/_footer.scss */
+.main-footer-contacts .phone {
+  position: relative;
+}
+
+/* line 55, src/sass/components/_footer.scss */
+.main-footer-contacts .phone::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+  background-image: url("../img/phone.svg");
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+  left: -25px;
+  bottom: 0.3rem;
+}
+
+/* line 59, src/sass/components/_footer.scss */
+.main-footer-contacts .company-details {
+  vertical-align: top;
+  color: #eee;
+  position: relative;
+  font-size: 0;
+  min-width: 50px;
+}
+
+/* line 65, src/sass/components/_footer.scss */
+.main-footer-contacts .company-details:active, .main-footer-contacts .company-details:visited, .main-footer-contacts .company-details:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+/* line 69, src/sass/components/_footer.scss */
+.main-footer-contacts .company-details::before {
+  top: 5px;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/file.svg");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  left: 0;
+  bottom: 0.3rem;
+}
+
+/* line 76, src/sass/components/_footer.scss */
+.main-footer-map {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-height: 240px;
 }
 
 @media screen and (max-width: 1024px) {

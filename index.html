@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="apple-touch-icon" href="icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+
   <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
   <link rel="stylesheet" href="css/main.min.css">
 
@@ -134,16 +134,19 @@
   </section>
 
   <footer class="main-footer">
-    <p class="">
-      <strong>ИП Яковлев Александр Викторович</strong><br>
-      г. Артем ул. Чернышевского, д. 29А<br>
-      e-mail: vladivostok28km@gmail.com<br>
-      тел.: 8(924)252-76-77, 8(914)692-93-47
-    </p>
-    <p class="">
-      © gruz-vl.ru
-    </p>
-    <a class="company-details" href="gruz-vl-company-details.doc">Реквизиты организации</a>
+    <div itemscope itemtype="http://schema.org/Organization" class="main-footer-contacts">
+      <p>
+        <strong itemprop="name">ИП Яковлев Александр Викторович</strong><br>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address"><span itemprop="addressLocality">г. Артем</span> <span itemprop="streetAddress">ул. Чернышевского, 29А</span></span><br>
+        <a itemprop="email" class="email" href="mailto:vladivostok28km@gmail.com">vladivostok28km@gmail.com</a><br>
+        <span class="phone">тел.: <span itemprop="telephone">+7 924 252-76-77</span>, <span itemprop="telephone">+7 914 692-93-47</span></span><br>
+      </p>
+      <a class="company-details" href="gruz-vl-company-details.doc" title="Реквизиты организации">Реквизиты организации</a>
+    </div>
+    <div class="main-footer-map">
+      <p style="width: 100%"></p>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A212cedf9e4fab56f92588b030ed6f62fd70c5c6c2469090088045ecef3e6e7c2&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
   </footer>
 
   <script src="js/main.js"></script>
