@@ -19,20 +19,16 @@
   padding: 20px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   p {
     margin-bottom: 0;
   }
 }
 
 .main-footer-contacts {
-  margin-left: 20px;
-  display: inline-block;
   line-height: 3rem;
   align-self: center;
-  a, p {
-    display: inline-block;
-    margin-right: 30px;
-  }
+  margin: 0 30px;
   .address {
     position: relative;
     &::before {
@@ -57,26 +53,24 @@
     }
   }
   .company-details {
-    vertical-align: top;
     color: $color-inverse;
     position: relative;
-    font-size: 0;
-    min-width: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    padding-top: 50px;
     &:active, &:visited, &:focus {
       text-decoration: none;
       outline: none;
     }
     &::before {
-      top: 5px;
       @include icon(50px, 0, '../img/file.svg');
+      top: 0;
+      left: 50%;
+      margin-left: -25px;
     }
   }
 }
 
 .main-footer-map {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
   flex-grow: 1;
-  min-height: 240px;
 }
