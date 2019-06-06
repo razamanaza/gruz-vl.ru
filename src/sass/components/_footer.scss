@@ -17,6 +17,8 @@
   background-color: $bg-inverse;
   color: $color-inverse;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
   p {
     margin-bottom: 0;
   }
@@ -26,6 +28,7 @@
   margin-left: 20px;
   display: inline-block;
   line-height: 3rem;
+  align-self: center;
   a, p {
     display: inline-block;
     margin-right: 30px;
@@ -39,6 +42,9 @@
   .email {
     position: relative;
     color: $color-inverse;
+    &:hover {
+      color: $color-quaternary;
+    }
     &::before {
       @include icon(17px, -25px, '../img/email.svg');
       bottom: 0.5rem;
@@ -55,6 +61,7 @@
     color: $color-inverse;
     position: relative;
     font-size: 0;
+    min-width: 50px;
     &:active, &:visited, &:focus {
       text-decoration: none;
       outline: none;
@@ -68,4 +75,8 @@
 
 .main-footer-map {
   display: inline-block;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 1;
+  min-height: 240px;
 }
