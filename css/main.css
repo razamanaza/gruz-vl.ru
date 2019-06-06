@@ -987,34 +987,29 @@ section h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-/* line 22, src/sass/components/_footer.scss */
+/* line 23, src/sass/components/_footer.scss */
 .main-footer p {
   margin-bottom: 0;
 }
 
-/* line 27, src/sass/components/_footer.scss */
+/* line 28, src/sass/components/_footer.scss */
 .main-footer-contacts {
-  margin-left: 20px;
-  display: inline-block;
   line-height: 3rem;
   -ms-flex-item-align: center;
       align-self: center;
+  margin: 0 30px;
 }
 
 /* line 32, src/sass/components/_footer.scss */
-.main-footer-contacts a, .main-footer-contacts p {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-/* line 36, src/sass/components/_footer.scss */
 .main-footer-contacts .address {
   position: relative;
 }
 
-/* line 38, src/sass/components/_footer.scss */
+/* line 34, src/sass/components/_footer.scss */
 .main-footer-contacts .address::before {
   content: "";
   position: absolute;
@@ -1028,18 +1023,18 @@ section h2 {
   bottom: 0.3rem;
 }
 
-/* line 42, src/sass/components/_footer.scss */
+/* line 38, src/sass/components/_footer.scss */
 .main-footer-contacts .email {
   position: relative;
   color: #eee;
 }
 
-/* line 45, src/sass/components/_footer.scss */
+/* line 41, src/sass/components/_footer.scss */
 .main-footer-contacts .email:hover {
   color: #d1d1d1;
 }
 
-/* line 48, src/sass/components/_footer.scss */
+/* line 44, src/sass/components/_footer.scss */
 .main-footer-contacts .email::before {
   content: "";
   position: absolute;
@@ -1054,12 +1049,12 @@ section h2 {
   bottom: 0.5rem;
 }
 
-/* line 53, src/sass/components/_footer.scss */
+/* line 49, src/sass/components/_footer.scss */
 .main-footer-contacts .phone {
   position: relative;
 }
 
-/* line 55, src/sass/components/_footer.scss */
+/* line 51, src/sass/components/_footer.scss */
 .main-footer-contacts .phone::before {
   content: "";
   position: absolute;
@@ -1073,24 +1068,23 @@ section h2 {
   bottom: 0.3rem;
 }
 
-/* line 59, src/sass/components/_footer.scss */
+/* line 55, src/sass/components/_footer.scss */
 .main-footer-contacts .company-details {
-  vertical-align: top;
   color: #eee;
   position: relative;
-  font-size: 0;
-  min-width: 50px;
+  display: inline-block;
+  margin-top: 10px;
+  padding-top: 50px;
 }
 
-/* line 65, src/sass/components/_footer.scss */
+/* line 61, src/sass/components/_footer.scss */
 .main-footer-contacts .company-details:active, .main-footer-contacts .company-details:visited, .main-footer-contacts .company-details:focus {
   text-decoration: none;
   outline: none;
 }
 
-/* line 69, src/sass/components/_footer.scss */
+/* line 65, src/sass/components/_footer.scss */
 .main-footer-contacts .company-details::before {
-  top: 5px;
   content: "";
   position: absolute;
   display: inline-block;
@@ -1101,17 +1095,16 @@ section h2 {
   background-repeat: no-repeat;
   left: 0;
   bottom: 0.3rem;
+  top: 0;
+  left: 50%;
+  margin-left: -25px;
 }
 
-/* line 76, src/sass/components/_footer.scss */
+/* line 74, src/sass/components/_footer.scss */
 .main-footer-map {
-  display: inline-block;
-  overflow: hidden;
-  position: relative;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  min-height: 240px;
 }
 
 @media screen and (max-width: 1024px) {
