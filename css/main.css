@@ -835,7 +835,7 @@ section h2 {
 
 /* line 30, src/sass/components/_header.scss */
 .main-header-background {
-  background-image: url("../img/main-header-bg.jpg");
+  background-image: url("../img/main-header-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
