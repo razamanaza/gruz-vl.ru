@@ -134,16 +134,18 @@
   </section>
 
   <footer class="main-footer">
-    <p class="main-footer-contacts">
-      <strong>ИП Яковлев Александр Викторович</strong><br>
-      <spanг. Артем ул. Чернышевского, д. 29А<br>
-      e-mail: vladivostok28km@gmail.com<br>
-      тел.: 8(924)252-76-77, 8(914)692-93-47
-    </p>
-    <p class="">
-      © gruz-vl.ru
-    </p>
-    <a class="company-details" href="gruz-vl-company-details.doc">Реквизиты организации</a>
+    <div itemscope itemtype="http://schema.org/Organization" class="main-footer-contacts">
+      <p>
+        <strong itemprop="name">ИП Яковлев Александр Викторович</strong><br>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="address"><span itemprop="addressLocality">г. Артем</span> <span itemprop="streetAddress">ул. Чернышевского, 29А</span></span><br>
+        <a itemprop="email" class="email" href="mailto:vladivostok28km@gmail.com">vladivostok28km@gmail.com</a><br>
+        <span class="phone">тел.: <span itemprop="telephone">+7 924 252-76-77</span>, <span itemprop="telephone">+7 914 692-93-47</span></span><br>
+      </p>
+      <a class="company-details" href="gruz-vl-company-details.doc" title="Реквизиты организации">Реквизиты организации</a>
+    </div>
+    <div class="main-footer-map">
+
+    </div>
   </footer>
 
   <script src="js/main.js"></script>

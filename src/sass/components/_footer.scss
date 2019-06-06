@@ -1,7 +1,71 @@
+@mixin icon($size, $margin, $url) {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: $size;
+  width: $size;
+  background-image: url($url);
+  background-size: $size $size;
+  background-repeat: no-repeat;
+  left: $margin;
+  bottom: 0.3rem;
+}
+
 .main-footer {
   margin-top: 80px;
   margin-bottom: 0;
   background-color: $bg-inverse;
   color: $color-inverse;
   padding: 20px;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.main-footer-contacts {
+  margin-left: 20px;
+  display: inline-block;
+  line-height: 3rem;
+  a, p {
+    display: inline-block;
+    margin-right: 30px;
+  }
+  .address {
+    position: relative;
+    &::before {
+      @include icon(17px, -25px, '../img/address.svg');
+    }
+  }
+  .email {
+    position: relative;
+    color: $color-inverse;
+    &::before {
+      @include icon(17px, -25px, '../img/email.svg');
+      bottom: 0.5rem;
+    }
+  }
+  .phone {
+    position: relative;
+    &::before {
+      @include icon(17px, -25px, '../img/phone.svg');
+    }
+  }
+  .company-details {
+    vertical-align: top;
+    color: $color-inverse;
+    position: relative;
+    font-size: 0;
+    &:active, &:visited, &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+    &::before {
+      top: 5px;
+      @include icon(50px, 0, '../img/file.svg');
+    }
+  }
+}
+
+.main-footer-map {
+  display: inline-block;
 }
