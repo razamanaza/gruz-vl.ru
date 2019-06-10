@@ -9,3 +9,9 @@
     margin-right: 0;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .main-footer {
+    flex-wrap: wrap;
+  }
+}
