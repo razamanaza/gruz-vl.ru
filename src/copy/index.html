@@ -32,7 +32,7 @@
         <div class="main-header-about">
           <p>Компания gruz-vl предоставляет услуги грузчиков для квартирных и офисных перевозок по Владивостоку, Артему и пригороду. Наши сотрудники рады помочь решить ваши проблемы с любыми перевозками будь это подъем стройматериалов, мебели или бытовой техники в любое удобное для Вас время. Для постоянных клиентов действует гибкая система скидок.</p>
           <p>Оформите заявку и мы будем готовы помочь вам уже через минуту.</p>
-          <form id="order" class="about-order" action="https://jumprock.co/mail/gruzvl">
+          <form id="order" class="about-order" action="https://jumprock.co/mail/gruzvl" method="post">
             <fieldset>
               <legend>Закажи прямо сейчас!</legend>
               <label for="order-name" class="visually-hidden">Имя</label>
@@ -40,6 +40,7 @@
               <label for="order-phone" class="visually-hidden">Телефон</label>
               <input id="order-phone" type="text" name="phone" placeholder="Ваш телефон" pattern="[0-9]{7,11}" required>
               <input type="text" name="trapit" value="" style="display:none">
+              <input type="hidden" name="after" value="https://razamanaza.github.io/gruz-vl.ru/#thanks">
               <button type="submit" class="button">Вызвать грузчиков</button>
             </fieldset>
           </form>
@@ -149,7 +150,13 @@
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8eb201b7c00757320d163fb5d035f733932be5f2bee8bbd6960af848ba8644f7&amp;width=100%25&amp;height=250&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
   </footer>
-
+  <div id="thanks" class="modal">
+    <div class="modal-inner">
+      <button class="modal-close"></button>
+      <p>Спасибо за обращение.<br> Наш оператор свяжется с вами в ближайшее время</p>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
   <link rel="stylesheet" href="https://cdn.envybox.io/widget/cbk.css">
   <script type="text/javascript" src="https://cdn.envybox.io/widget/cbk.js?wcb_code=d38c9487330b0df6c89a89f1fb40a1cb" charset="UTF-8" async></script>
 </body>
