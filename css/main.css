@@ -1108,6 +1108,82 @@ section h2 {
   min-width: 200px;
 }
 
+/* line 1, src/sass/components/_modals.scss */
+.modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(51, 51, 51, 0.6);
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* line 12, src/sass/components/_modals.scss */
+.modal-inner {
+  max-width: 350px;
+  display: inline-block;
+  background-color: #eee;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 25px 30px;
+  -webkit-box-shadow: 2px 2px 3px #555;
+          box-shadow: 2px 2px 3px #555;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 22, src/sass/components/_modals.scss */
+.modal-inner p {
+  margin-bottom: 0;
+}
+
+/* line 27, src/sass/components/_modals.scss */
+.modal-close {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  height: 25px;
+  width: 25px;
+}
+
+/* line 38, src/sass/components/_modals.scss */
+.modal-close:hover, .modal-close:active, .modal-close:visited {
+  background: none;
+  outline: none;
+}
+
+/* line 42, src/sass/components/_modals.scss */
+.modal-close::before {
+  content: "";
+  display: block;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/close.svg");
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  margin: 0 auto 30px auto;
+}
+
+/* line 54, src/sass/components/_modals.scss */
+.modal-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 1024px) {
   /* line 2, src/sass/components/_media.scss */
   .main-header-middle {
