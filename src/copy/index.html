@@ -36,9 +36,9 @@
             <fieldset>
               <legend>Закажи прямо сейчас!</legend>
               <label for="order-name" class="visually-hidden">Имя</label>
-              <input id="order-name" type="text" name="name" placeholder="Ваше имя">
+              <input id="order-name" type="text" name="name" placeholder="Ваше имя" required>
               <label for="order-phone" class="visually-hidden">Телефон</label>
-              <input id="order-phone" type="tel" name="phone" placeholder="Ваш телефон">
+              <input id="order-phone" type="tel" name="phone" placeholder="Ваш телефон" pattern="[0-9]{7,11}" required>
               <input type="text" name="trapit" value="" style="display:none">
               <button type="submit" class="button">Вызвать грузчиков</button>
             </fieldset>
