@@ -1105,6 +1105,7 @@ section h2 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  min-width: 200px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1119,5 +1120,13 @@ section h2 {
   .main-header-about {
     max-width: 100%;
     margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  /* line 14, src/sass/components/_media.scss */
+  .main-footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
