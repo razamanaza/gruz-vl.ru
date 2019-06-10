@@ -9,5 +9,5 @@ if (url.hash === '#thanks') {
 
 modalCloseButton.addEventListener('click', (function(){
   modal.classList.remove('modal-show');
-  window.location.href = (`${url.protocol}//${url.hostname}`);
+  window.location.href = (`${url.protocol}//${url.hostname}/${url.pathname}`);
 }));
