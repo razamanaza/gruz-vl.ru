@@ -1,1 +1,1 @@
-Gulp boilerplate for simple static sites
+This is the website of gruz-vl company. Our services are related to trucking industry on Vladivostok's market.
