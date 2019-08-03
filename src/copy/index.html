@@ -32,7 +32,7 @@
         <div class="main-header-about">
           <p>Компания gruz-vl предоставляет услуги грузчиков для квартирных и офисных перевозок по Владивостоку, Артему и пригороду. Наши сотрудники рады помочь решить ваши проблемы с любыми перевозками будь это подъем стройматериалов, мебели или бытовой техники в любое удобное для Вас время. Для постоянных клиентов действует гибкая система скидок.</p>
           <p>Оформите заявку и мы будем готовы помочь вам уже через минуту.</p>
-          <form id="order" class="about-order" action="https://jumprock.co/mail/gruzvl" method="post">
+          <form id="order" class="about-order" action="https://jumprock.co/mail/gruzvl" method="post" onsubmit="ym(53995099, 'reachGoal', 'CALL_WORK'); return true;">
             <fieldset>
               <legend>Закажи прямо сейчас!</legend>
               <label for="order-name" class="visually-hidden">Имя</label>
@@ -41,7 +41,7 @@
               <input id="order-phone" type="text" name="phone" placeholder="Ваш телефон" pattern="[0-9]{7,11}" required>
               <input type="text" name="trapit" value="" style="display:none">
               <input type="hidden" name="after" value="https://razamanaza.github.io/gruz-vl.ru/#thanks">
-              <button type="submit" onclick="ym(53995099, 'reachGoal', 'CALL_WORK'); return true;" class="button">Вызвать грузчиков</button>
+              <button type="submit" class="button">Вызвать грузчиков</button>
             </fieldset>
           </form>
         </div>
